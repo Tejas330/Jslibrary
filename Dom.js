@@ -1,4 +1,5 @@
 var a = "Finnally This is being Working";
 var b = "😁😁😁"
 var z = a + b
-let c , cl = "click";
+let c , cl = "click" 
+let al = alert("working")
