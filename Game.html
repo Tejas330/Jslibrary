@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+            body {
+    position:fixed ;
+    user-select:none;
+}
+#load1{
+    width:8%;height:8%;
+    border-style:none;
+    background:orange;
+    position:fixed ;transition:5s;
+    border-radius:0px 100px 100px 0px;
+    margin-top:70%;margin-left:65%;
+}
+@keyframes spin{
+    0%{transform:rotate(0deg);margin-left:45%;}
+    100%{margin-left:65%;}
+}
+#lad1{
+    width:8%;height:8%;
+    border-style:none;
+    background:red;
+    position:fixed ;
+    border-radius:100px 0px 0px 100px;
+    margin-left:25%;margin-top:70%;
+
+}
+@keyframes spin1 {
+    0%{transform:rotate(0deg);margin-left:38%;}
+ 100%{margin-left:25%;}
+}
+#txt1{
+    position:fixed ;font-size:388%;
+    margin-left:35%;font-family:serif;
+    margin-top:73%;opacity:1;color:white;
+}
+#txt3{
+    position:fixed ;font-size:388%;
+    margin-left:35%;font-family:serif;
+    margin-top:73%;opacity:1;color:white;
+    opacity:1;display:none;
+}
+@keyframes txt{
+    60%,50%,40%,30%,20%,10%,0%{opacity:0;}
+    100%{opacity:1;}
+}
+#MainG{
+    font-size:550%;
+    position:fixed ;
+    font-family:"Times New Roman",serif;
+    
+}
+#G1{
+    margin-top:5%;
+    position:fixed ;
+    display:none;
+    animation-delay:5s;
+    background:linear-gradient( #FF1493, #0000FF);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
+
+}
+@keyframes fall{
+    0%{margin-top:-15%;}
+    20%{margin-top:5%;}
+    40%{margin-top:-4%;}
+    60%{margin-top:5%;}
+    80%{margin-top:2.5%;}
+    100%{margin-top:5%;}
+    
+}
+#G2{
+    margin-top:8%;
+    position:fixed ;
+    margin-left:28%;
+    animation-delay:8s;
+   display:none;
+   background: linear-gradient( #FF1493, #0000FF);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+@keyframes fall1{
+    0%{margin-top:-22%;}
+    20%{margin-top:8%;}
+    40%{margin-top:-4%;}
+    60%{margin-top:8%;}
+    80%{margin-top:4%;}
+    100%{margin-top:8%;}
+}
+#bttn1{
+    width:28%;height:8%;
+    border-style:none ; background:hsl(195,100%,47%);
+    position:fixed ;border-radius:30px;margin-top:78%;
+    margin-left:33%;display:none;
+    
+}
+.bttn1{
+    font-size:450%;margin-left:6%;margin-top:2.5%;
+    position:fixed ;font-family:"Luminari", fantasy;
+    color:hsl(300,100%,94%);
+}
+#bttn2{width:28%;height:8%;
+    border-style:none ; background:hsl(195,100%,47%);
+    position:fixed ;border-radius:30px;margin-top:98%;
+    margin-left:10%;display:none;
+    }
+.bttn2{
+    font-size:450%;margin-left:2.5%;margin-top:2.5%;
+    position:fixed ;font-family:"Luminari", fantasy;
+    color:hsl(300,100%,94%);
+}
+#bttn3{
+    width:32%;height:8%;
+    border-style:none ; background:hsl(195,100%,47%);
+    position:fixed ;border-radius:30px;margin-top:98%;
+    margin-left:54.5%;display:none;
+}
+.bttn3{
+    font-size:450%;margin-left:3%;margin-top:2.5%;
+    position:fixed ;font-family:"Luminari", fantasy;
+    color:hsl(300,100%,94%);
+}
+@keyframes bttn1{
+    0%{margin-top:200%;}
+    50%{margin-top:70%;}
+    100%{margin-top:78%;}
+}
+@keyframes bttn2{
+    0%{margin-top:220%;}
+    50%{margin-top:88%;}
+    100%{margin-top:98%;}
+}
+@keyframes bttn3{
+    0%{margin-top:220%;}
+    50%{margin-top:88%;}
+    100%{margin-top:98%;}
+}
+#tribot{
+    font-size:380%;position:fixed ;
+    transform:rotate(90deg);
+    right:1%;
+}
+#nm1{
+    font-size:350%; color:white;
+    font-family:fantasy;margin-top:50%;
+    margin-left:23%;position:fixed ;
+    color:hsl(212,98%,50%);display:none;
+}
+#m1{
+    position:fixed ;padding-right:11%;padding-bottom:3.5%;
+    font-size:260%;padding-left:11%;padding-top:3.5%;
+    color:white;background:hsl(212,98%,50%);
+    font-family:fantasy;border-style:none;margin-top:71%;
+    margin-left:30%;border-radius:15px;display:none;
+}
+#m2{
+    position:fixed ;padding-right:10%;padding-bottom:3.5%;
+    font-size:260%;padding-left:11%;padding-top:3.5%;
+    color:white;background:hsl(212,98%,50%);
+    font-family:fantasy;border-style:none;margin-top:85%;
+    margin-left:30%;border-radius:15px;display:none;
+}
+#m3{
+    position:fixed ;padding-right:11%;padding-bottom:3.5%;
+    font-size:260%;padding-left:11%;padding-top:3.5%;
+    color:white;background:hsl(212,98%,50%);
+    font-family:fantasy;border-style:none;margin-top:99%;
+    margin-left:30%;border-radius:15px;
+    display:none;
+}
+@keyframes m1{
+    0%{margin-left:-1000%;}
+   40%{margin-left:50%;}
+   60%{margin-left:10%;}
+  100%{margin-left:30%;}
+}
+@keyframes m2{
+    0%{margin-left:1000%;}
+   40%{margin-left:10%;}
+   60%{margin-left:50%;}
+  100%{margin-left:30%;}
+}
+@keyframes m3{
+    0%{margin-left:-1000%;}
+   40%{margin-left:50%;}
+   60%{margin-left:10%;}
+  100%{margin-left:30%;}
+}
+
+
+        </style>
+    </head>
+    <body id="BODY">
+        <div id="load1"></div>
+        <div id="txt1">Loading...</div>
+            <div id="lad1"></div>
+            <div id="txt3"onclick="main()">Continue</div>
+            <div id="MainG"><span id="G1">Find The ?</span><br /><span id="G2"> - Odd One Out</span></div>
+            <div id="bttn1"><span class="bttn1"onclick="play()">Play</span></div><div id="bttn2"><span class="bttn2"onclick="about()">Details</span></div>
+            <div id="bttn3"><span class="bttn3">Settings</span></div>
+       <div id="tribot">&#8230</div>
+       <div id="mode">
+           <div id="nm1">Choose Your Mode:</div>
+           <div id="m1">Emojis</div>
+           <div id="m2">Figures</div>
+           <div id="m3">Photos</div>
+       </div>
+       <script>
+           window.onload = () =>{var lod = document.getElementById("load1");lod.style.animation = "spin 5s 1"; var lod1 = document.getElementById("lad1");lod1.style.animation = "spin1 5s 1";lod1.style.display="block";
+           var   body = document.getElementById("BODY");body.style.background = "black";var txt1 = document.getElementById("txt1"); txt1.style.animation = "txt 6s 1"; var txt2 = document.getElementById("txt3");txt2.style.animation = "txt1 15s 1";};function inner1(){var txt1 = document.getElementById("txt1");txt1.innerHTML = "Loaded...";};setTimeout(inner1 , 6000);function inner2(){var txt1 = document.getElementById("txt1");txt1.innerHTML = "Continue";var txt2 = document.getElementById("txt3");txt2.style.display = "block";};setTimeout(inner2 , 10000);function main(){var body = document.getElementById("BODY");body.style.background = "#FFA500";body.style.transition = "5s";var lod = document.getElementById("load1");lod.style.left = "500px";var lod1 = document.getElementById("lad1");lod1.style.right = "-500px";var txt2 = document.getElementById("txt3");txt2.style.display = "none";var txt1 = document.getElementById("txt1");txt1.style.display = "none";
+var G = document.getElementById("G1");G.style.animation  = "fall 5s 1";G.style.display = "block";var G1 = document.getElementById("G2");G1.style.animation = "fall1 5s 1";G1.style.display = "block";
+var bttn1 = document.getElementById("bttn1");
+bttn1.style.animation = "bttn1 3s 1";bttn1.style.display = "block";var bttn2 = document.getElementById("bttn2");
+bttn2.style.animation = "bttn2 3s 1";bttn2.style.display = "block";var bttn3 = document.getElementById("bttn3");
+bttn3.style.display = "block";bttn3.style.animation ="bttn3 3s 1";console.clear();
+};
+console.clear();
+function play(){
+   var body =  document.getElementById("BODY")
+   body.style.background = "hsl(29, 100%, 65%)";
+    bttn1.style.display = "none";
+    bttn2.style.display  = "none"
+    bttn3.style.display = "none";
+    var G = document.getElementById("MainG").style.display = "none";navigator.vibrate(100);
+    var nm1 = document.getElementById("nm1");
+    nm1.style.display = "block";
+    var m1 = document.getElementById("m1");
+    m1.style.animation = "m1 2.5s 1";
+    m1.style.display = "block";
+    var m2 = document.getElementById("m2");
+    m2.style.animation ="m2 2.5s 1";
+    m2.style.display = "block";
+    var m3 = document.getElementById("m3");
+    m3.style.animation = "m3 2.5s 1";
+    m3.style.display = "block";
+    
+}
+function about(){
+    var body =  document.getElementById("BODY")
+   body.style.background = "hsl(73, 91%, 55%)";
+    bttn1.style.display = "none";
+    bttn2.style.display  = "none"
+    bttn3.style.display = "none";
+    var G = document.getElementById("MainG").style.display = "none";navigator.vibrate(100)
+}
+       </script>
+    </body>
+</html>
