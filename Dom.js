@@ -1,4 +1,7 @@
-const cvx = document.querySelector("#cvx");
+
+let cvx = document.createElement('canvas')
+document.body.appendChild(cvx)
+//const cvx = document.querySelector("#cvx");
             const ctx = cvx.getContext("2d")
             cvx.height = innerHeight || 600
             cvx.width = innerWidth || 400
